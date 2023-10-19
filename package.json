@@ -1,0 +1,29 @@
+{
+  "name": "app-erros",
+  "version": "1.0.0",
+  "description": "Criado para contabilizar erros e acertos da equipe de suporte",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelsantoslv/contadorErros.git"
+  },
+  "author": "Rafael & Eduardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelsantoslv/contadorErros/issues"
+  },
+  "homepage": "https://github.com/rafaelsantoslv/contadorErros#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.2",
+    "sequelize": "^6.33.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  }
+}
