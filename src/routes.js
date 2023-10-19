@@ -1,4 +1,7 @@
 const express = require('express');
+const connection = require("./database/index");
+const tabRegistros = require("./model/tabRegistros")
+const AdicionarController = require("./controller/AdicionarController")
 const routes = express.Router();
 
 routes.post("/", (req, res) => {
@@ -10,5 +13,7 @@ routes.post("/", (req, res) => {
 		
 	});
 });
+
+routes.post("/adicionar", AdicionarController.adicionar);
 
 module.exports = routes;
