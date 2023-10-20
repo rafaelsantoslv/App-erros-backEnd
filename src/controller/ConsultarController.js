@@ -6,7 +6,7 @@ module.exports = {
         if(!req.body.nome || req.body.tipo) {
             const consultar = await tabRegistros.sequelize.query("SELECT * FROM tabRegistros")
             return (
-                res.status(200),json({
+                res.status(200).json({
                 result: consultar,
                 status: "200"
             })

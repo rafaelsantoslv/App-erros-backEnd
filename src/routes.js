@@ -16,6 +16,6 @@ routes.post("/", (req, res) => {
 });
 
 routes.post("/adicionar", AdicionarController.adicionar);
-routes.get1("/consultar", ConsultarController.consultar);
+routes.get("/consultar", ConsultarController.consultar);
 
 module.exports = routes;
