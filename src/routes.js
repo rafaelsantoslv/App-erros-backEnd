@@ -2,6 +2,7 @@ const express = require('express');
 const connection = require("./database/index");
 const tabRegistros = require("./model/tabRegistros")
 const AdicionarController = require("./controller/AdicionarController")
+const ConsultarController = require("./controller/ConsultarController")
 const routes = express.Router();
 
 routes.post("/", (req, res) => {
@@ -15,5 +16,6 @@ routes.post("/", (req, res) => {
 });
 
 routes.post("/adicionar", AdicionarController.adicionar);
+routes.get1("/consultar", ConsultarController.consultar);
 
 module.exports = routes;
